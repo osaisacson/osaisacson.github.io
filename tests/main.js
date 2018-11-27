@@ -1,9 +1,9 @@
 import assert from "assert";
 
-describe("osaisacson", function () {
+describe("wherethere", function () {
   it("package.json has correct name", async function () {
     const { name } = await import("../package.json");
-    assert.strictEqual(name, "osaisacson");
+    assert.strictEqual(name, "wherethere");
   });
 
   if (Meteor.isClient) {
