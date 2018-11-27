@@ -5,10 +5,10 @@ import { Tracker } from 'meteor/tracker'
 import { weatherIcons } from './weatherIcons.js';
 
 //API Calls
-import { APIkey, APIweatherkey } from '../settings.json';
-import { getCurrentCityData } from './APIcalls/getCurrentCity.js'
-import { getCurrentCityPic } from './APIcalls/getCurrentPic.js'
-import { getCitiesListData } from './APIcalls/getCitiesList.js'
+import { APIkey, APIweatherkey } from '/settings.json';
+import { getCurrentCityData } from './imports/APIcalls/getCurrentCity.js'
+import { getCurrentCityPic } from './imports/APIcalls/getCurrentPic.js'
+import { getCitiesListData } from './imports/APIcalls/getCitiesList.js'
 
 import './body.html';
 
