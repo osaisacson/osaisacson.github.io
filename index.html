@@ -1,78 +1,82 @@
 <head>
   <title>wherethere</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
-  <link rel = "stylesheet" type = "text/css" href = "index.scss" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link rel = "stylesheet" type = "text/css" href = "main.css" />
 </head>
 
 <body>
 
-  <!-- Set current city -->
-  <div class="section">
+<a href="https://www.linkedin.com/in/%C3%A5sa-osa-isacson-86308934/"><img class="pic" src="me.jpg" /></a>
 
-    <form>
-      {{#if hasSubmittedForm}}
 
-        {{#if cityExists}}
-        <h2>You're in</h2>
-        {{else}}
-        <h3>This place doesn't seem to exist, try another city.</h3>
-        {{/if}}
+<div class="section">
+  <h3>CV</h3>
+  <a href="https://www.linkedin.com/in/%C3%A5sa-osa-isacson-86308934/">Osa Gambas Isacson</a>
+</div>
 
-      {{/if}}
-  	  <input type="text" autocomplete="off" name="{{#if currCity.name}}{{currCity.name}}{{else}}cityName{{/if}}" placeholder="Where are you?" required class="search-box" />
-  	</form>
-  </div>
+<div class="section">
+  <h3>Code</h3>
+  <a href="http://wherethere.herokuapp.com">wherethere</a>
+</div>
 
-  <!-- Only show current city data if current city data exists -->
-  {{#if cityExists}}
+<div class="section">
+  <h3>Architecture</h3>
+  <a href="#">lufthuset</a>
+  <a href="#">grabroeder</a>
+</div>
 
-  <!-- For the current city object... -->
-    {{#with currCity}}
+<div class="section">
+  <h3>UI/UX</h3>
+  <a href="#">sweet enough</a>
+  <a href="#">jamlab</a>
+  <a href="#">stem mentorship</a>
+  <a href="#">citron digital</a>
+  <a href="#">0 & O - artistopedia</a>
+  <a href="#">treehouse</a>
+  <a href="#">riyo/gecko</a>
+</div>
 
-    <!-- ...show the below if it has a name -->
-      {{#if name}}
-      <div class="section">
-        <h3>...where it is <i class="big-icon {{icon}}"></i> <h1>{{temp}}</h1>and {{description}}.</h3>
-      </div>
-      <div class="section">
-        <h3>Show me where it is currently...</h3>
-      </div>
-      <div class="options">
-        <i id="rain" class="option wi wi-rain"></i>
-        <i id="snow" class="option wi wi-snow"></i>
-        <i id="cloud" class="option wi wi-cloud"></i>
-        <i id="clear" class="option wi wi-day-sunny"></i>
-      </div>
-      <a href={{picLink}}><img class="pic-author" src={{picAuthor}} /></a>
-      {{/if}}
-    {{/with}}
-  {{else}}
-  <a href='https://unsplash.com/@bendavisual'><img class="pic-author" src='https://images.unsplash.com/profile-1525018026535-581938eb5586?dpr=1&auto=format&fit=crop&w=64&h=64&q=60&crop=faces&bg=fff' /></a>
-  {{/if}}
+<div class="section">
+  <h3>Tools for Democracy</h3>
+  <a href="#">my backyard</a>
+  <a href="#">batches</a>
+  <a href="#">demos</a>
+  <a href="#">homes</a>
+  <a href="#">me & all the others</a>
+</div>
 
-{{#if loadingList}}
-<h3>Finding cities where it is currently <i class='selected-weather {{selectedIcon}}'></i> Hold on.</h3>
-{{/if}}
+<div class="section">
+  <h3>Video</h3>
+  <a href="#">you're it</a>
+  <a href="#">another day to do nothing</a>
+</div>
 
-{{#if textMessage}}
-<h3>{{textMessage}}</h3>
-{{/if}}
+<div class="section">
+  <h3>UN Projects</h3>
+  <a href="#">Global Urban Lectures</a>
+  <a href="#">UNI Portal</a>
+  <a href="#">UNI Thematic Hubs</a>
+  <a href="#">UN-Habitat website</a>
+  <a href="#">UN-Habitat YouTube channel</a>
+  <a href="#">Partnership portal</a>
+</div>
 
-{{#unless clearCitiesList}}
+<div class="section">
+  <h3>Music</h3>
+  <a href="#">Evripides & friends</a>
+  <a href="#">night of the living covers</a>
+  <a href="#">assorted karaoke</a>
+</div>
 
-  {{#if weatherList}}
-    {{#each weatherList}}
-    <a class="city-item" href={{link}}>
-      <div class="left-hand-of-darkness">
-        <h1>{{temp}}</h1>
-        <h2>{{name}}</h2>
-      </div>
-      <h2 class="right-hand-of-darkness">Take me there <i class='{{selectedIcon}}'></i></h2>
-    </a>
-    {{/each}}
-  {{/if}}
-
-{{/unless}}
+<div class="section">
+  <h3>Loves</h3>
+  <a href="#">Heinlein</a>
+  <a href="#">Karen Armstrong</a>
+  <a href="#">Joseph Campbell</a>
+  <a href="#">Adam Curtis</a>
+  <a href="#">Cory Doctorow</a>
+  <a href="#">Liv Stromkvist</a>
+</div>
 
 </body>
