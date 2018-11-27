@@ -13,7 +13,7 @@
 	},
 	"meteor": {
 		"mainModule": {
-			"client": "client/main.js",
+			"client": "index.js",
 			"server": "server/main.js"
 		},
 		"testModule": "tests/main.js"
