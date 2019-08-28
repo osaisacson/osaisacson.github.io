@@ -23,9 +23,11 @@ body {
 h1,
 h2,
 h3 {
-  color: #555;
+  font-family: Oswald;
+  text-transform: uppercase;
+  color: #000;
   min-width: fit-content;
-  font-weight: 200;
+  font-weight: 400;
   margin: 0;
   padding: 0;
 }
@@ -43,13 +45,13 @@ h3 {
 }
 
 a {
-  color: #666;
+  font-weight: 200;
+  color: #000;
   text-decoration: none;
 }
 
 a:hover {
-  color: rgb(128, 8, 98);
-  animation: fade .1s ease-in;
+  color: rgb(42, 226, 195);
 }
 
 .section {
@@ -64,14 +66,4 @@ a:hover {
   right: 20px;
   width: 5rem;
   border-radius: 50%;
-}
-
-@keyframes fade {
-  0% {
-   opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
