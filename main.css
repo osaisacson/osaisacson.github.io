@@ -53,7 +53,7 @@ a:hover {
 }
 
 .section {
-  padding: 10px;
+  padding: 10px 20px;
   display: flex;
   flex-direction: column;
 }
