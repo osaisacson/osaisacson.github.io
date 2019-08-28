@@ -23,11 +23,9 @@ body {
 h1,
 h2,
 h3 {
-  font-family: Oswald;
-  text-transform: uppercase;
   color: #000;
   min-width: fit-content;
-  font-weight: 400;
+  font-weight: 600;
   margin: 0;
   padding: 0;
 }
