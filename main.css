@@ -9,8 +9,7 @@ html {
 }
 
 body {
-  font-family: Oswald;
-  text-transform: uppercase;
+  font-family: Arial;
   flex-direction: column;
   background: no-repeat center top fixed;
   background-image: url('pus.jpg');
