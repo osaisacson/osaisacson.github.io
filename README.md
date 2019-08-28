@@ -1,2 +1,1 @@
-# Wherethere - 'Where's the weather? There's the weather!'
-http://wherethere.herokuapp.com
+# Osa Isacson - 'That's my name, don't wear it out'
