@@ -63,6 +63,8 @@ a:focus {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .prototype-site-section {
   margin-top: 20%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Logos and images
@@ -82,7 +84,6 @@ a:focus {
   width: 50px;
 }
 
-
 /* Eye
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -91,15 +92,20 @@ a:focus {
     transform: none;
   }
   20% {
-    transform: translateX(-68px) translateY(30px) skewX(15deg) skewY(-10deg) scale(0.95);
+    transform: translateX(-68px) translateY(30px) skewX(15deg) skewY(-10deg)
+      scale(0.95);
   }
-  25%, 44% {
+  25%,
+  44% {
     transform: none;
   }
-  50%, 60% {
-    transform: translateX(68px) translateY(-40px) skewX(5deg) skewY(2deg) scaleX(0.95);
+  50%,
+  60% {
+    transform: translateX(68px) translateY(-40px) skewX(5deg) skewY(2deg)
+      scaleX(0.95);
   }
-  66%, 100% {
+  66%,
+  100% {
     transform: none;
   }
 }
@@ -111,17 +117,27 @@ a:focus {
   margin: 0;
   border-radius: 50%;
   position: relative;
-  background: radial-gradient(circle at 50% 40%, #fcfcfc, #efeff1 66%, #9b5050 100%);
+  background: radial-gradient(
+    circle at 50% 40%,
+    #fcfcfc,
+    #efeff1 66%,
+    #9b5050 100%
+  );
 }
 .ball:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 5%;
   left: 10%;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.8) 14%,
+    rgba(255, 255, 255, 0) 24%
+  );
   transform: translateX(-80px) translateY(-90px) skewX(-20deg);
 }
 
@@ -130,13 +146,19 @@ a:focus {
   height: 40%;
   margin: 30%;
   border-radius: 50%;
-  background: radial-gradient(circle at 50% 50%, #e8fff5 0%, #b6fadc 30%, #cfffe5 100%);
+  border: 1px solid grey;
+  background: radial-gradient(
+    circle at 50% 50%,
+    #e8fff5 0%,
+    #b6fadc 30%,
+    #cfffe5 100%
+  );
   transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
   position: absolute;
   animation: move-eye-skew 5s ease-out infinite;
 }
 .iris:before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   width: 37.5%;
@@ -147,7 +169,7 @@ a:focus {
   background: black;
 }
 .iris:after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   width: 31.25%;
@@ -159,14 +181,20 @@ a:focus {
 }
 
 .ball .shadow {
-position: absolute;
-width: 100%;
-height: 100%;
-background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
-transform: rotateX(90deg) translateZ(-150px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.1) 40%,
+    rgba(0, 0, 0, 0) 50%
+  );
+  transform: rotateX(90deg) translateZ(-150px);
   z-index: -1;
 }
 .stage {
+  z-index: -10;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -179,7 +207,3 @@ transform: rotateX(90deg) translateZ(-150px);
   transform-style: preserve-3d;
   transform: rotateY(0.01deg);
 }
-
-
-
-Resources
