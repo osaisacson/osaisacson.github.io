@@ -62,8 +62,9 @@ a:focus {
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .full-section {
-  margin-top: 20%;
+  margin-top: 15%;
 }
+
 .prototype-site-section {
   margin-top: 20%;
   display: flex;
