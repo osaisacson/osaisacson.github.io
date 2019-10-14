@@ -1,0 +1,24 @@
+{
+  "name": "osaisacson.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"open index.html\" \"node-sass --watch scss -o css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osaisacson/osaisacson.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osaisacson/osaisacson.github.io/issues"
+  },
+  "homepage": "https://github.com/osaisacson/osaisacson.github.io#readme",
+  "dependencies": {
+    "concurrently": "^5.0.0",
+    "node-sass": "^4.12.0"
+  }
+}

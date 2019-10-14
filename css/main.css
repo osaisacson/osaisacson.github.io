@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* Main
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1,
+h2,
+h3,
+h5,
+h5,
+a {
+  font-family: 'Oswald', sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600; }
+
+h6 {
+  color: #666;
+  font-family: 'Raleway', sans-serif;
+  margin: 10px 0; }
+
+p {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif; }
+
+a {
+  text-decoration: none;
+  font-size: 0.9em;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+a:hover,
+a:active,
+a:focus {
+  color: black;
+  background-color: yellow;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1); }
+
+/* Helpers
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.one-line-spread {
+  display: flex;
+  align-items: center; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
+.half-width {
+  width: 50%; }
+
+.third-width {
+  width: 33.3%; }
+
+.bold {
+  font-weight: 600; }
+
+/* Specific styles for sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+section {
+  margin-top: 8%; }
+
+.link-and-description a {
+  background-color: #000;
+  color: #fff;
+  padding: 2px 4px;
+  transition: all 0.5s; }
+  .link-and-description a:hover, .link-and-description a:focus, .link-and-description a:active {
+    background-color: yellow;
+    color: #000; }
+
+/* Logos and images
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.logo {
+  margin-top: 5%;
+  width: 50%; }
+
+.mini-logo {
+  width: 25px;
+  position: fixed;
+  right: 3%;
+  top: 3%; }
+
+.logo-thumbnail {
+  width: 50px; }
