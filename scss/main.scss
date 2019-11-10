@@ -91,6 +91,8 @@ html, body {
 
   > .ui-center {
     flex-grow: 1;
+    opacity: 1;
+    transition: all .5s;
   }
 
   &.-expanded {
@@ -101,6 +103,9 @@ html, body {
     > .ui-right {
       margin-top: 15%;
       transform: rotate(90deg);
+    }
+    > .ui-center {
+      opacity: 0;
     }
   }
 }
@@ -124,7 +129,9 @@ html, body {
 }
 
 .links {
-  margin-top: 30px;
+  padding-top: 30px;
+  margin: auto;
+  width: 80%;
 
   .link {
     margin-left: 17%;
