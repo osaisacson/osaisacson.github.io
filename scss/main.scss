@@ -68,7 +68,6 @@ html, body {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    // background-color: #fff;
   }
 
   > .ui-left, > .ui-right {
@@ -78,10 +77,13 @@ html, body {
   }
 
   > .ui-left {
+    transition: all .5s;
     transform: translateX(50%);
   }
 
   > .ui-right {
+    color: #000;
+    transition: all .5s;
     font-size: 1rem;
     margin-top: 10px;
     transform: translateX(-50%);
@@ -93,11 +95,11 @@ html, body {
 
   &.-expanded {
     > .ui-left {
+      margin-top: 14%;
       transform: none;
     }
     > .ui-right {
-      transition: all .5s;
-      margin-top: 20px;
+      margin-top: 15%;
       transform: rotate(90deg);
     }
   }
@@ -164,8 +166,7 @@ body {
 h1,
 h2,
 h3,
-h4,
-a {
+h4 {
   font-family: 'Oswald', sans-serif;
 }
 
@@ -194,16 +195,17 @@ a {
   font-size: 0.9em;
   line-height: 1.6;
   font-weight: 400;
-  font-family: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial,
-    sans-serif;
 }
 
 a:hover,
 a:active,
 a:focus {
-  color: black;
   background-color: rgba(255, 255, 255, .6);
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &.ui-right {
+    color: white;
+    background-color: transparent;
+  }
 }
 
 
@@ -282,7 +284,7 @@ a:focus {
 @media (max-width: 500px) {
 
   .logo {
-    margin-top: 35%;
+    margin-top: 30%;
   }
 }
 

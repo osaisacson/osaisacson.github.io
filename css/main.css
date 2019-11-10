@@ -61,18 +61,21 @@ html, body {
     font-weight: bold;
     z-index: 1; }
   .ui-nav > .ui-left {
+    transition: all .5s;
     transform: translateX(50%); }
   .ui-nav > .ui-right {
+    color: #000;
+    transition: all .5s;
     font-size: 1rem;
     margin-top: 10px;
     transform: translateX(-50%); }
   .ui-nav > .ui-center {
     flex-grow: 1; }
   .ui-nav.-expanded > .ui-left {
+    margin-top: 14%;
     transform: none; }
   .ui-nav.-expanded > .ui-right {
-    transition: all .5s;
-    margin-top: 20px;
+    margin-top: 15%;
     transform: rotate(90deg); }
 
 .ui-item {
@@ -120,8 +123,7 @@ body {
 h1,
 h2,
 h3,
-h4,
-a {
+h4 {
   font-family: 'Oswald', sans-serif; }
 
 h1,
@@ -145,15 +147,17 @@ a {
   text-decoration: none;
   font-size: 0.9em;
   line-height: 1.6;
-  font-weight: 400;
-  font-family: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-weight: 400; }
 
 a:hover,
 a:active,
 a:focus {
-  color: black;
-  background-color: rgba(255, 255, 255, 0.6);
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1); }
+  background-color: rgba(255, 255, 255, 0.6); }
+  a:hover.ui-right,
+  a:active.ui-right,
+  a:focus.ui-right {
+    color: white;
+    background-color: transparent; }
 
 /* Helpers
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -206,7 +210,7 @@ a:focus {
 
 @media (max-width: 500px) {
   .logo {
-    margin-top: 35%; } }
+    margin-top: 30%; } }
 
 .logo-thumbnail {
   width: 50px; }
